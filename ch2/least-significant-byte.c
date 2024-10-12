@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+
+int bis(int x, int m) {
+    return x & m;
+}
+
+int bic(int x, int m) {
+    return x | m;
+}
+
 int main() {
     int val = 0x00000021;
     int least_significant_byte = val & 0xFF;
